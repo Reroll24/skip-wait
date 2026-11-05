@@ -1,0 +1,66 @@
+Skip Wait / 跳过人生 — 第三方声明
+==================================
+
+本项目（src 下的 Lua）以 MIT 发布，见 LICENSE。以下第三方内容没有随本项目
+分发代码，但判据/思路源自它们，按各自许可在此致谢；如权利人认为署名方式
+需要调整，请联系作者修改。
+
+1. Impatient Diver — MIT
+   https://github.com/Alomare/ImpatientDiver
+   https://www.nexusmods.com/helldivers2/mods/16624
+   作者：Alomare
+
+   本项目参考了它的世界识别方式（units_by_resource + kind 标记）、分阶段
+   跳跃额度，以及空降舱 / 登录 / 冷冻舱判据的研究笔记。没有包含它的代码、
+   文件或资产。
+
+   已获原作者授权（2026-11-06 私信）：可任意使用、借用并修改代码，注明出处即可。
+
+   MIT License
+   Copyright (c) 2026 Alomare
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+2. QuickDebrief 0.4.3 host beta — 已获原作者授权
+   Nexus:   https://www.nexusmods.com/helldivers2/mods/17764
+   作者:    w741（Nexus）/ 蒼耳_PaddyNeko（Bilibili）
+   Bilibili: https://space.bilibili.com/36037388
+
+   任务结算的状态机与回船电梯的几何判据移植自它。原作者已授权本项目使用，
+   按要求在此注明来源；如后续授权条款有变化，本项目会相应调整。
+
+3. Mod Options Menu — 0BSD
+   https://github.com/CowboyBingus/ModOptionsMenu
+   作者：CowboyBingus
+
+   只使用其公开的设置菜单 API（register_option / mod_id / gap），没有复制
+   它的实现代码。
+
+4. MDL3（运行平台，非代码来源）
+   https://ayakamods.com/mods/mdl3-preview-%E9%BA%A6%E5%BD%93%E5%8A%B33-%E9%A2%84%E8%A7%88%E7%89%88%EF%BC%81.5710/
+   作者：M!ni$try0fSc!eиce
+
+   本 mod 作为 MDL3 的本地 Lua mod 运行，使用它提供的 Mod Options Menu
+   API 与时间步接口；没有复制 MDL3 的代码。
+
+5. hd2-lua-mod-skill — MIT（仅构建工具，不随 mod 分发）
+   https://github.com/MrChengl11/hd2-lua-mod-skill
+
+   `tools/py/hd2_archive.py` 取自该仓库的 `.patch_N` 归档读写实现（MIT），
+   只用来生成 addon 发布包。
