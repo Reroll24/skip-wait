@@ -1,0 +1,35 @@
+# 构建产物 / build output
+*.zip
+dist/
+
+# 日志 / logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+tools/pyenv/
+
+# 编辑器与系统 / editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 合并与备份残留 / merge and backup leftovers
+*.orig
+*.rej
+*.bak
+*.tmp
+
+# 发布页文案（Nexus / Ayaka，只留本地）/ store page copy stays local
+docs/nexus*
+docs/ayaka*
+
+# 内部笔记 / internal notes
+HANDOFF.md
